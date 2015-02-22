@@ -46,3 +46,12 @@ git clone git@github.com:jongillies/docker-apacheds.git
 cd docker-apacheds
 docker build -t apacheds .
 ```
+
+## Run from hub.docker.com:
+
+```
+docker run -d
+    -p 10389:10389 \
+    -p 10636:10636 \
+    --name apacheds supercoder/apacheds
+```
